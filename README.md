@@ -1,7 +1,7 @@
 LeapHemnet
 ==========
 
-Use the Leap Motion Controller to choose the size of your home! This is a quick hacked together tool translating the
+Use the Leap Motion Controller to choose the size of your next home! This is a quick hacked together tool translating the
 distance you show with your hands into a search at a local instance of hemnet.se.
 
 Getting started
