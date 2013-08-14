@@ -7,12 +7,19 @@
 //
 
 #import "LHNAppDelegate.h"
+#import "LHNMainWindowController.h"
 
 @implementation LHNAppDelegate
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
 {
-    // Insert code here to initialize your application
+    self.mainWindowController = [[LHNMainWindowController alloc] initWithWindowNibName:@"MainWindow"];
+    
+    [self.mainWindowController showWindow:self];
+}
+
+- (BOOL)applicationShouldTerminateAfterLastWindowClosed:(NSApplication *)application {
+    return YES;
 }
 
 @end

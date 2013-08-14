@@ -18,6 +18,12 @@
 		403F102F17BAC124000B1CFE /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 403F100E17BAC124000B1CFE /* Cocoa.framework */; };
 		403F103717BAC124000B1CFE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 403F103517BAC124000B1CFE /* InfoPlist.strings */; };
 		403F103917BAC124000B1CFE /* LeapHemnetTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 403F103817BAC124000B1CFE /* LeapHemnetTests.m */; };
+		403F104817BAC181000B1CFE /* LeapObjectiveC.mm in Sources */ = {isa = PBXBuildFile; fileRef = 403F104417BAC181000B1CFE /* LeapObjectiveC.mm */; };
+		403F104C17BAC9E1000B1CFE /* libLeap.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 403F104217BAC14C000B1CFE /* libLeap.dylib */; };
+		403F104D17BACE71000B1CFE /* LHNLeapRangeRecognizer.m in Sources */ = {isa = PBXBuildFile; fileRef = 403F104B17BAC37C000B1CFE /* LHNLeapRangeRecognizer.m */; };
+		403F105117BAD332000B1CFE /* libLeap.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = 403F104217BAC14C000B1CFE /* libLeap.dylib */; };
+		403F105717BAE641000B1CFE /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 403F105617BAE635000B1CFE /* MainWindow.xib */; };
+		403F105B17BAE7BB000B1CFE /* LHNMainWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 403F105A17BAE7BB000B1CFE /* LHNMainWindowController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +35,19 @@
 			remoteInfo = LeapHemnet;
 		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		403F105017BAD326000B1CFE /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 6;
+			files = (
+				403F105117BAD332000B1CFE /* libLeap.dylib in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		403F100B17BAC124000B1CFE /* LeapHemnet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LeapHemnet.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -50,6 +69,16 @@
 		403F103417BAC124000B1CFE /* LeapHemnetTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "LeapHemnetTests-Info.plist"; sourceTree = "<group>"; };
 		403F103617BAC124000B1CFE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		403F103817BAC124000B1CFE /* LeapHemnetTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LeapHemnetTests.m; sourceTree = "<group>"; };
+		403F104217BAC14C000B1CFE /* libLeap.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libLeap.dylib; sourceTree = "<group>"; };
+		403F104417BAC181000B1CFE /* LeapObjectiveC.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = LeapObjectiveC.mm; sourceTree = "<group>"; };
+		403F104517BAC181000B1CFE /* LeapObjectiveC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeapObjectiveC.h; sourceTree = "<group>"; };
+		403F104617BAC181000B1CFE /* LeapMath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeapMath.h; sourceTree = "<group>"; };
+		403F104717BAC181000B1CFE /* Leap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Leap.h; sourceTree = "<group>"; };
+		403F104A17BAC37C000B1CFE /* LHNLeapRangeRecognizer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LHNLeapRangeRecognizer.h; sourceTree = "<group>"; };
+		403F104B17BAC37C000B1CFE /* LHNLeapRangeRecognizer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LHNLeapRangeRecognizer.m; sourceTree = "<group>"; };
+		403F105617BAE635000B1CFE /* MainWindow.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainWindow.xib; sourceTree = "<group>"; };
+		403F105917BAE7BB000B1CFE /* LHNMainWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LHNMainWindowController.h; sourceTree = "<group>"; };
+		403F105A17BAE7BB000B1CFE /* LHNMainWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LHNMainWindowController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +87,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				403F100F17BAC124000B1CFE /* Cocoa.framework in Frameworks */,
+				403F104C17BAC9E1000B1CFE /* libLeap.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -95,6 +125,7 @@
 		403F100D17BAC124000B1CFE /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				403F104217BAC14C000B1CFE /* libLeap.dylib */,
 				403F100E17BAC124000B1CFE /* Cocoa.framework */,
 				403F102D17BAC124000B1CFE /* XCTest.framework */,
 				403F101017BAC124000B1CFE /* Other Frameworks */,
@@ -117,9 +148,10 @@
 			children = (
 				403F102017BAC124000B1CFE /* LHNAppDelegate.h */,
 				403F102117BAC124000B1CFE /* LHNAppDelegate.m */,
-				403F102317BAC124000B1CFE /* MainMenu.xib */,
-				403F102617BAC124000B1CFE /* Images.xcassets */,
+				403F105C17BAEC92000B1CFE /* Leap Recognition */,
+				403F105517BADF54000B1CFE /* User Interface */,
 				403F101517BAC124000B1CFE /* Supporting Files */,
+				403F104917BAC186000B1CFE /* Leap */,
 			);
 			path = LeapHemnet;
 			sourceTree = "<group>";
@@ -154,6 +186,38 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		403F104917BAC186000B1CFE /* Leap */ = {
+			isa = PBXGroup;
+			children = (
+				403F104517BAC181000B1CFE /* LeapObjectiveC.h */,
+				403F104417BAC181000B1CFE /* LeapObjectiveC.mm */,
+				403F104617BAC181000B1CFE /* LeapMath.h */,
+				403F104717BAC181000B1CFE /* Leap.h */,
+			);
+			name = Leap;
+			sourceTree = "<group>";
+		};
+		403F105517BADF54000B1CFE /* User Interface */ = {
+			isa = PBXGroup;
+			children = (
+				403F102317BAC124000B1CFE /* MainMenu.xib */,
+				403F105617BAE635000B1CFE /* MainWindow.xib */,
+				403F102617BAC124000B1CFE /* Images.xcassets */,
+				403F105917BAE7BB000B1CFE /* LHNMainWindowController.h */,
+				403F105A17BAE7BB000B1CFE /* LHNMainWindowController.m */,
+			);
+			name = "User Interface";
+			sourceTree = "<group>";
+		};
+		403F105C17BAEC92000B1CFE /* Leap Recognition */ = {
+			isa = PBXGroup;
+			children = (
+				403F104A17BAC37C000B1CFE /* LHNLeapRangeRecognizer.h */,
+				403F104B17BAC37C000B1CFE /* LHNLeapRangeRecognizer.m */,
+			);
+			name = "Leap Recognition";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -164,6 +228,7 @@
 				403F100717BAC124000B1CFE /* Sources */,
 				403F100817BAC124000B1CFE /* Frameworks */,
 				403F100917BAC124000B1CFE /* Resources */,
+				403F105017BAD326000B1CFE /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -232,6 +297,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				403F101917BAC124000B1CFE /* InfoPlist.strings in Resources */,
+				403F105717BAE641000B1CFE /* MainWindow.xib in Resources */,
 				403F102717BAC124000B1CFE /* Images.xcassets in Resources */,
 				403F101F17BAC124000B1CFE /* Credits.rtf in Resources */,
 				403F102517BAC124000B1CFE /* MainMenu.xib in Resources */,
@@ -253,7 +319,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				403F104817BAC181000B1CFE /* LeapObjectiveC.mm in Sources */,
+				403F105B17BAE7BB000B1CFE /* LHNMainWindowController.m in Sources */,
 				403F101B17BAC124000B1CFE /* main.m in Sources */,
+				403F104D17BACE71000B1CFE /* LHNLeapRangeRecognizer.m in Sources */,
 				403F102217BAC124000B1CFE /* LHNAppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -317,7 +386,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_CXX_LIBRARY = "libstdc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
@@ -355,7 +424,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_CXX_LIBRARY = "libstdc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
@@ -385,12 +454,18 @@
 		403F103D17BAC124000B1CFE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "LeapHemnet/LeapHemnet-Prefix.pch";
 				INFOPLIST_FILE = "LeapHemnet/LeapHemnet-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -398,12 +473,18 @@
 		403F103E17BAC124000B1CFE /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "LeapHemnet/LeapHemnet-Prefix.pch";
 				INFOPLIST_FILE = "LeapHemnet/LeapHemnet-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

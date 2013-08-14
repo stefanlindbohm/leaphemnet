@@ -8,8 +8,10 @@
 
 #import <Cocoa/Cocoa.h>
 
+@class LHNMainWindowController;
+
 @interface LHNAppDelegate : NSObject <NSApplicationDelegate>
 
-@property (assign) IBOutlet NSWindow *window;
+@property (nonatomic) IBOutlet LHNMainWindowController *mainWindowController;
 
 @end

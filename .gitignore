@@ -1,0 +1,8 @@
+xcuserdata/
+
+# Get this from Leap directly
+libLeap.dylib
+LeapHemnet/Leap.h
+LeapHemnet/LeapMath.h
+LeapHemnet/LeapObjectiveC.h
+LeapHemnet/LeapObjectiveC.mm
